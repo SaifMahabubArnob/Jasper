@@ -1,0 +1,100 @@
+
+/* বেসিক স্টাইল */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e90ff, #ff7f50);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* সাইনআপ কন্টেইনার */
+.signup-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* ফর্ম শিরোনাম */
+.signup-form h1 {
+    font-size: 28px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signup-form p {
+    text-align: center;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+/* ইনপুট গ্রুপ */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+    outline: none;
+}
+
+/* সাইনআপ বোতাম */
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #1e90ff, #ff7f50);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(135deg, #ff7f50, #1e90ff);
+    transform: scale(1.05);
+}
+
+/* অল্টারনেট লিংক */
+.alt-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.alt-link a {
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.alt-link a:hover {
+    color: #ff7f50;
+}

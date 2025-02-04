@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_Landscape_1" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7c543794-52bb-4b8e-8b9e-961f0648a12e">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (8)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from ship_booking]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		
+	</field>
+	<field name="arrivalDate" class="java.lang.String">
+		
+	</field>
+	<field name="bookingStatus" class="java.lang.String">
+		
+	</field>
+	<field name="cabinType" class="java.lang.String">
+		
+	</field>
+	<field name="departureDate" class="java.lang.String">
+		
+	</field>
+	<field name="departurePort" class="java.lang.String">
+		
+	</field>
+	<field name="destinationPort" class="java.lang.String">
+		
+	</field>
+	<field name="numberOfPassengers" class="java.lang.Integer">
+	
+	</field>
+	<field name="paymentMethod" class="java.lang.String">
+		
+	</field>
+	<field name="shipId" class="java.lang.Long">
+		
+	<field name="totalAmount" class="java.lang.Integer">
+		
+	</field>
+	<field name="userId" class="java.lang.Long">
+		
+	</field>
+	<group name="id">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+	</group>
+	<group name="arrival_date">
+		<groupExpression><![CDATA[$F{arrivalDate}]]></groupExpression>
+	</group>
+	<group name="booking_status">
+		<groupExpression><![CDATA[$F{bookingStatus}]]></groupExpression>
+	</group>
+	<group name="cabin_type">
+		<groupExpression><![CDATA[$F{cabinType}]]></groupExpression>
+	</group>
+	<group name="departure_date">
+		<groupExpression><![CDATA[$F{departureDate}]]></groupExpression>
+	</group>
+	<group name="departure_port">
+		<groupExpression><![CDATA[$F{departurePort}]]></groupExpression>
+	</group>
+	<group name="destination_port">
+		<groupExpression><![CDATA[$F{destinationPort}]]></groupExpression>
+	</group>
+	<group name="number_of_passengers">
+		<groupExpression><![CDATA[$F{numberOfPassengers}]]></groupExpression>
+	</group>
+	<group name="payment_method">
+		<groupExpression><![CDATA[$F{paymentMethod}]]></groupExpression>
+	</group>
+	<group name="ship_id">
+		<groupExpression><![CDATA[$F{shipId}]]></groupExpression>
+	</group>
+	<group name="total_amount">
+		<groupExpression><![CDATA[$F{totalAmount}]]></groupExpression>
+	</group>
+	<group name="user_id">
+		<groupExpression><![CDATA[$F{userId}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="76" height="30" uuid="12f1f5a6-2c3b-4a2b-afb9-9508ff7b961e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b073affb-0491-4cbb-8587-fdb3723484db"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="76" y="0" width="66" height="30" uuid="917199a3-8ce2-4703-8f4c-aa8f41b1f717">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ce3483ef-7c50-45cb-a784-b7341c71cdcc"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[arrival_date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="0" width="66" height="30" uuid="69418cf1-fe37-4ebf-be16-017f8802438c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d6460664-340c-4ba9-9b05-83a8bec479fc"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[booking_status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="0" width="66" height="30" uuid="08e7cc8e-7460-44a3-9590-132f31c958f0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="53d8bddb-9dc4-4fd9-9d88-76189451c1e9"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[cabin_type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="0" width="66" height="30" uuid="d77f805a-c760-4144-9c1b-ac42ff06d3ec">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd7c901a-4932-4995-b89f-4d8a6da4169a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[departure_date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="66" height="30" uuid="a0b82459-bf31-4ff8-a287-2773c5e0377e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c19a728d-6a67-4052-b622-67bdea53657c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[departure_port]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="0" width="66" height="30" uuid="d6ccf9b3-3924-4574-afdf-9c26a92fe0a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff3f00d0-54ba-4af7-8e71-102380e92ca0"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[destination_port]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="0" width="66" height="30" uuid="13252a27-4f6e-4d2e-87b7-1718d4977017">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b95223c7-a7e1-47c9-b63e-a8f22faf5016"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[number_of_passengers]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="538" y="0" width="66" height="30" uuid="250b593f-ff5b-4bc7-930f-28349ee11e5a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3ac02567-92c3-47e8-8afe-2a25e250364a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[payment_method]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="604" y="0" width="66" height="30" uuid="87ad0d4c-d260-437d-8c16-8f9faf6ba0cb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3271e504-f123-4dde-90d3-633d81b3c86a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ship_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="670" y="0" width="66" height="30" uuid="1b81eef8-9510-47f4-897a-9de20f62eb03">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7a7aa12-9b13-4e62-aec4-adeda32fb37b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[total_amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="736" y="0" width="66" height="30" uuid="23520f18-d997-483f-9412-be8c6a261517">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00e56215-489a-4b0e-9818-8e6163816dd8"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[user_id]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="76" height="30" uuid="36179754-6ffd-4d7d-aec5-077a218dfeac">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b073affb-0491-4cbb-8587-fdb3723484db"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="76" y="0" width="66" height="30" uuid="e21a1734-de1a-4d28-bf77-85d84606984f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ce3483ef-7c50-45cb-a784-b7341c71cdcc"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{arrival_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="142" y="0" width="66" height="30" uuid="6d1ebd68-3a6c-430d-92dd-50779e37d224">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d6460664-340c-4ba9-9b05-83a8bec479fc"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{booking_status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="208" y="0" width="66" height="30" uuid="f6260f56-2625-467c-a218-e47b4100da15">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="53d8bddb-9dc4-4fd9-9d88-76189451c1e9"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cabin_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="274" y="0" width="66" height="30" uuid="6b167556-44dd-4745-9001-cdc0d55ff613">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd7c901a-4932-4995-b89f-4d8a6da4169a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{departure_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="66" height="30" uuid="fcf3422a-e62f-4ee7-8bee-3225f23c20c1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c19a728d-6a67-4052-b622-67bdea53657c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{departure_port}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="406" y="0" width="66" height="30" uuid="9e659dc9-dc37-40f1-8cf2-3b1a3184d807">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff3f00d0-54ba-4af7-8e71-102380e92ca0"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{destination_port}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="0" width="66" height="30" uuid="0106ff7b-9608-497a-8b6b-2c8b4dffac3e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b95223c7-a7e1-47c9-b63e-a8f22faf5016"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{number_of_passengers}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="538" y="0" width="66" height="30" uuid="9a372a33-78cd-4e44-afe3-57af02f7b6ea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3ac02567-92c3-47e8-8afe-2a25e250364a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{payment_method}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="604" y="0" width="66" height="30" uuid="d9c1b5ec-77ef-4341-ba7e-586de54bfea5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3271e504-f123-4dde-90d3-633d81b3c86a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ship_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="0" width="66" height="30" uuid="ebe62708-fde6-4f7f-b2ac-463081c62133">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7a7aa12-9b13-4e62-aec4-adeda32fb37b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{total_amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="736" y="0" width="66" height="30" uuid="d0a41d2f-19b2-453a-a1ea-9111af82d485">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00e56215-489a-4b0e-9818-8e6163816dd8"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{user_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

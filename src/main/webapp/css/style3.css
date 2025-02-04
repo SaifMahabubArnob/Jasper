@@ -1,0 +1,338 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Flash Deals Section */
+.flash-deals {
+    background: linear-gradient(to bottom, #ffffff, #f9fafc); /* হালকা গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.flash-deals h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* টেক্সটকে বড় হাতের করা */
+    letter-spacing: 2px;
+}
+
+.deals-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* রেস্পন্সিভ ডিজাইন */
+}
+
+.deal-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* ছায়া */
+    overflow: hidden;
+    text-align: center;
+    width: 300px; /* কার্ডের প্রস্থ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* স্মুথ হোভার ইফেক্ট */
+}
+
+.deal-card:hover {
+    transform: scale(1.05); /* হোভার করলে কার্ড বড় হবে */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* গভীর ছায়া */
+}
+
+.deal-card img {
+    width: 100%;
+    height: 200px; /* নির্দিষ্ট উচ্চতা */
+    object-fit: cover; /* ইমেজের আকার বজায় রাখা */
+    border-bottom: 2px solid #ff5a5f; /* ইমেজের নিচে বর্ডার */
+}
+
+.deal-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 15px 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.deal-card button {
+    background-color: #ff5a5f; /* ব্র্যান্ডেড লাল রঙ */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0 15px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.deal-card button:hover {
+    background-color: #e04d53; /* হোভার রঙ */
+    transform: scale(1.1); /* বাটন বড় হবে */
+}
+
+/* Responsive Design for Mobile and Tablets */
+@media (max-width: 768px) {
+    .deals-carousel {
+        flex-direction: column; /* মোবাইলে কার্ডগুলো উল্লম্বভাবে সাজবে */
+        align-items: center;
+    }
+
+    .deal-card {
+        width: 90%; /* মোবাইলে কার্ড স্ক্রিনের ৯০% নেবে */
+    }
+}
+
+
+
+
+/* Frequently Traveled Bus Routes */
+/* CSS Styling */
+.frequent-routes {
+    background: linear-gradient(to right, #e0f7fa, #ffffff); /* হালকা গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.frequent-routes h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase; /* বড় হাতের অক্ষর */
+    letter-spacing: 2px;
+}
+
+.routes-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* কার্ডগুলোর মাঝে দূরত্ব */
+    flex-wrap: wrap; /* রেস্পন্সিভ ডিজাইন */
+}
+
+.route-card {
+    background: #fff;
+    border-radius: 12px; /* গোলাকার কোণ */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* হালকা ছায়া */
+    overflow: hidden;
+    width: 280px; /* কার্ডের প্রস্থ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* স্মুথ হোভার ইফেক্ট */
+    text-align: center;
+}
+
+.route-card:hover {
+    transform: translateY(-10px); /* হোভার করলে কার্ড ওপরে উঠবে */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* গভীর ছায়া */
+}
+
+.route-card img {
+    width: 100%;
+    height: 180px; /* নির্দিষ্ট উচ্চতা */
+    object-fit: cover; /* ইমেজ ঠিকমতো ফিট হবে */
+    border-bottom: 3px solid #007bff; /* নীল বর্ডার */
+}
+
+.route-card p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 15px 0;
+    font-weight: 600;
+    text-transform: capitalize; /* প্রথম অক্ষর বড় */
+    transition: color 0.3s ease; /* স্মুথ রঙ পরিবর্তন */
+}
+
+.route-card:hover p {
+    color: #007bff; /* হোভার করলে টেক্সট নীল হবে */
+}
+
+/* রেস্পন্সিভ ডিজাইন */
+@media (max-width: 768px) {
+    .routes-grid {
+        flex-direction: column; /* মোবাইলে কার্ড উল্লম্বভাবে সাজবে */
+        align-items: center;
+    }
+
+    .route-card {
+        width: 90%; /* মোবাইলে কার্ড স্ক্রিনের ৯০% নেবে */
+    }
+}
+
+
+
+
+
+
+.popular-routes {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-routes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.routes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.routes-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.routes-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.location-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+span {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.route-btn {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+	font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+	width: 120px;
+	text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.route-btn:hover {
+    background-color: #e0494f;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .routes-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .route-btn {
+        margin-top: 10px;
+		width: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Popular Hotels */
+.popular-hotels {
+    background-color: #f8f9fa; /* হালকা ব্যাকগ্রাউন্ড রঙ */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-hotels h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.hotels-grid {
+    display: flex;
+    flex-wrap: wrap; /* রেস্পন্সিভ ডিজাইন */
+    justify-content: center;
+    gap: 20px; /* কার্ডগুলোর মাঝে স্পেস */
+}
+
+.hotel-card {
+    background: #fff; /* সাদা ব্যাকগ্রাউন্ড */
+    border-radius: 12px; /* গোলাকার কোণ */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* কার্ডের নিচে ছায়া */
+    overflow: hidden; /* অতিরিক্ত কন্টেন্ট লুকানোর জন্য */
+    width: 300px; /* প্রতিটি কার্ডের প্রস্থ */
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s; /* হোভার এফেক্ট */
+}
+
+.hotel-card:hover {
+    transform: scale(1.05); /* হোভার করলে কার্ড বড় হবে */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* গভীর ছায়া */
+}
+
+.hotel-card img {
+    width: 100%; /* ইমেজ পুরো কার্ড কভার করবে */
+    height: 200px; /* ইমেজের নির্দিষ্ট উচ্চতা */
+    object-fit: cover; /* ইমেজের আকার বজায় রাখা */
+}
+
+.hotel-card h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 15px 10px 5px;
+    font-weight: bold;
+}
+
+.hotel-card h4 {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 10px;
+    font-weight: normal;
+}
+
+.hotel-card p {
+    font-size: 0.9rem;
+    color: #f4b400; /* সোনালি রঙ (স্টার রেটিং) */
+    margin: 5px 10px 15px;
+    font-weight: bold;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .hotels-grid {
+        flex-direction: column; /* মোবাইলে কার্ডগুলো উল্লম্বভাবে সাজবে */
+        align-items: center;
+    }
+
+    .hotel-card {
+        width: 90%; /* মোবাইলে কার্ড স্ক্রিনের ৯০% জায়গা নেবে */
+    }
+}

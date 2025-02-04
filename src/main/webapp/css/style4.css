@@ -1,0 +1,97 @@
+/* বেসিক স্টাইল */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #d0021b;
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+/* ফ্ল্যাশ ডিলস কন্টেইনার */
+.flash-deals-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ডিল কার্ড */
+.deal-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.deal-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ছবির অংশ */
+.deal-card img {
+    width: 300px;
+    height: auto;
+    border-right: 1px solid #ddd;
+}
+
+/* টেক্সটের অংশ */
+.deal-card .details {
+    padding: 15px 20px;
+    text-align: left;
+    flex: 1;
+}
+
+.deal-card .details h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.deal-card .details p {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.deal-card .details a {
+    color: #d0021b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.deal-card .details a:hover {
+    text-decoration: underline;
+}
+
+/* শেয়ার লিঙ্ক */
+.share-links {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.share-links a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: opacity 0.3s;
+}
+
+.share-links a img:hover {
+    opacity: 0.7;
+}

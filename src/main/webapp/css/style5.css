@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9fafc;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tab Header */
+.tab-header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+}
+
+.tab-header div {
+    padding: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.tab-header div:hover {
+    background-color: #f1f1f1;
+}
+
+.tab-header div.active {
+    color: #e50914;
+    border-bottom: 2px solid #e50914;
+}
+
+/* Form Group */
+.form-group {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.form-group input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group button {
+    width: 80%;
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #c40812;
+}
+
+/* Links */
+.links {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 13px;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+}
+
+.promo {
+    width: 24%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.promo img {
+    width: 100%;
+	
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.promo p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Hidden Form */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .tab-header div {
+        font-size: 12px;
+    }
+
+    .form-group input,
+    .form-group button {
+        width: 90%;
+    }
+}
